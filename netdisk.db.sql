@@ -1,0 +1,14 @@
+USE `db1751561`;
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE `user` (
+	`user_name` VARCHAR(128) NOT NULL,
+	`user_pwd` VARCHAR(128) NOT NULL,
+	PRIMARY KEY(`user_name`)
+) ENGINE=InnoDB DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `file`;
+CREATE TABLE `file`(
+	`file_name` VARCHAR(128) NOT NULL,
+	`file_usenum` INT(11) NOT NULL DEFAULT 1,
+	PRIMARY KEY(`file_name`)
+) ENGINE=InnoDB DEFAULT CHARSET=gbk;
